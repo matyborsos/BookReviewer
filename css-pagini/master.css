@@ -1,0 +1,231 @@
+* { margin: 0; padding: 0; }
+
+html
+{
+	color: #aaaaaa;
+	background-color: white;
+	font: 75%/1.5 "Trebuchet MS", "Lucida Grande", Verdana, Sans-Serif;	
+}
+
+/* Links */
+
+a { text-decoration: none; font-weight: bold; }
+
+
+a:hover, a:active { color: #000000; }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #996644; padding: 10px 0; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: normal; }
+
+h1 { font-size: 2.0em; }
+
+h2 { font-size: 1.8em; }
+
+h3 { font-size: 1.6em; }
+
+h4 { font-size: 1.4em; }
+
+h5, h6 { font-size: 1.2em; }
+
+/* Lists */
+
+ul
+{
+	margin: 10px 35px;
+	line-height: 2.0em;
+	list-style-type: square; 
+}
+
+ol
+{
+	margin: 10px 40px;
+	line-height: 2.0em;
+}
+
+dl
+{
+	margin: 10px 35px; 
+	line-height: 1.7em;
+}
+
+dt, dd { padding: 5px 0; }
+
+/* Other Html Elements */
+
+p
+{
+	margin: 15px 0; 
+	line-height: 1.6em;
+}
+
+abbr, acronym, cite, kbd
+{
+	cursor: help; 
+	font-style: normal;
+	border-bottom: 1px dotted #888888; 
+}
+
+pre { overflow: auto; }
+
+blockquote, pre
+{
+	margin: 20px 35px; 
+	padding: 5px 10px; 
+	background-color: #ffffff;
+	border: 1px solid #cfcfcf; 
+}
+
+code { font-family: Consolas, Monaco; }
+
+hr
+{
+	height: 1px;
+	clear: both;
+	visibility: hidden;
+}
+
+/* Structure */
+
+body
+{
+	color: #555555;
+	background-color: #f9f9f9;
+}
+
+#cheader
+{
+	height: 400px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #555555;
+}
+
+
+#wrapper
+{
+	float: left;
+	clear: both;
+	border-bottom: 1px solid #dddddd;
+}
+
+#content
+{
+	width: 60%;
+	float: left;
+	overflow: hidden;
+}
+
+#sidebar
+{
+	width: 40%;
+	float: left;
+	overflow: hidden;
+}
+
+#footer
+{
+	clear: both;
+}
+
+#extras
+{
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+/* Header */
+
+#header h1 a 
+{ 
+	color: black;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: "Arial Narrow", Tahoma, Verdana;
+}
+
+#header h1 span 
+{ 
+	padding-right: 90px;
+	visibility:visible; 
+}
+
+
+/* Content */
+
+.post
+{
+	padding: 10px 30px 10px 20px ; 
+}
+
+.post-footer
+{
+	padding: 5px; 
+	font-size: .9em;
+	background-color: #f9f9f9;
+	border: 1px solid #aaaaaa;
+}
+
+.post-footer a { border-bottom-width: 0; }
+
+/* Sidebar */
+
+#sidebar h3
+{
+	font-size: 1.0em;
+	font-weight: bold;
+	padding-left: 5px;
+	text-transform: uppercase;
+}
+
+#sidenotes dl
+{
+	margin: 0;
+}
+
+#sidenotes dt 
+{ 
+	padding-bottom: 0; 
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-right: 5px solid #ddddaa;
+}
+
+#sidenotes dd
+{
+	padding-top: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px; 
+	border-right: 5px solid #ddddaa;
+	border-bottom: 1px dotted #cccc99;
+}
+
+#sidenotes dd a { border-bottom-width: 0; }
+
+#syndicate ul
+{
+	margin: 0; 
+	list-style-type: none;
+}
+
+#syndicate a
+{
+	display: block;
+	padding: 5px 8px;
+	margin-top: -1px;
+	border-top: 1px dotted #888888;
+}
+
+#syndicate a:hover, #syndicate a:active
+{
+	background-color: #ffffff;
+	
+	/* Because IE 7 isn't highlighting otherwise */
+	width: 100%;
+}

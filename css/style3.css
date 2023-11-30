@@ -1,0 +1,220 @@
+/*
+    Theme Name: Baker
+    Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+*/
+
+body {
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  color: #67696c;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+.section-padding {
+  padding: 60px 0px;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+/***********************************
+************************************
+HEADER
+************************************
+***********************************/
+
+.header {
+  background-color: black;
+  min-height: 100px;
+  position: relative;
+}
+
+.bg-color {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100px;
+}
+
+
+.navbar-default {
+  background-color: transparent;
+  border: 0px;
+  padding: 20px 0;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+	.navbar-collapse {
+		background: black;
+    border-top: 0;
+	}
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: black;
+}
+
+.top-nav-collapse {
+  padding: 0;
+  background: black;
+}
+
+.logo-dec {
+  color: #c18f59;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #fff;
+}
+
+.navbar-brand {
+  padding: 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 15px 0px;
+  margin-top: 6px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: transparent;
+  color: #fff;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #c18f59;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  background-color: transparent;
+  color: #c18f59;
+}
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+.drop::after, li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px;}
+
+/* Top Navigation */
+
+ul ul{z-index:9999; position:absolute; width:160px; text-align:center;}
+ul ul ul{left:160px; top:0;}
+li{display:block; position:relative; float:left; margin:0; padding:0; text-transform:uppercase;}
+li:last-child{margin-right:0;}
+li li{width:100%; margin:0; text-transform:none;}
+li a{display:block; padding:20px;}
+li li a{border-width:0 0 1px 0;}
+li li:first-child a, li li:last-child a{border-width:0 0 1px 0;}
+.drop{padding-left:25px;}
+li li a, li li .drop{display:block; margin:0; padding:10px 15px;}
+.drop:after{top:25px; left:15px;}
+li li .drop:after{top:15px; left:5px;}
+ul ul{visibility:hidden; opacity:0;}
+ul li:hover > ul{visibility:visible; opacity:1;}
+li a{color:white; background-color:inherit; border-color:#252B34;}
+.active a,  a:hover,  li:hover > a{color:#2f302d; background-color:inherit;}
+li li a,  .active li a{color:#c18f59; background-color: black; border-color:rgba(0,0,0,.6);}
+li li:hover > a,  .active .active > a{color:black; background-color: #c18f59;}
